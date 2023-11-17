@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <!-- Important information for Mobile Devices -->
+  <p class="animate__animated animate__fadeInDown animate__delay-1s">Sorry but you can't access this platform on your current device. Try accessing it on a desktop or a big tablet device. We are currently working on the mobile version. 
+    we aplogize for any inconvinience. 🙏
+  - <span>Flexiwork Studios</span></p>
+  <header>
+    <!-- Header goes here -->
+    <nav>
+      <!-- Creating the navigation bar -->
+      <div class="logo">
+        <!-- This is the logo of the site -->
+        <a href="#">CryptoInvest</a>
+      </div>
+      <!-- Creating the nav links -->
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Meet Investors</a>
+        <a href="#">Contact us</a>
+      </div>
+    </nav>
+    <!-- Creating the hero-section image -->
+    <div class="hero-section-image">
+      <!-- Set a background image -->
+      <h1 class="animate__animated animate__bounceIn animate__delay-1s">WELCOME TO CRYPTO INVEST 📈📉</h1>
+      <p class="animate__animated animate__bounceIn animate__delay-2s">You can invest your money here with expert traders and let them transform it to a huge capital over a period of time</p>
+      <a href="#create-account" class="btn-started animate__animated animate__fadeInUp animate__delay-3s">Get Started</a>
+    </div>
+  </header>
+  <main id="create-account">
+    <!-- Main content goes here -->
+    <h1>Create an Account with Us</h1>
+   <form action="dashboard.html" method="get" autocomplete="on">
+    <fieldset>
+      <legend>These informations will be required to secure your investment Account</legend>
+      <div class="col-md-4">
+        <label for="Fname" class="form-label">First name</label>
+        <input type="text" class="form-control" id="Fname" value="" name="firstName" required>
+      </div>
+      <div class="col-md-4">
+          <label for="Lname" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="Lname" name="lastName" value="" required>
+        </div>
+        <div class="mb-3">
+          <label for="nickname" class="form-label">Username</label>
+          <input type="text"
+            class="form-control" name="userName" id="nickname" aria-describedby="helpId" placeholder="Use a Fair Nickname" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="markforex@gmail.com" required>
+          <small id="emailHelpId" class="form-text text-muted">Please place an active email</small>
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="pass" placeholder="" required>
+        </div>
+        <div class="mb-3">
+          <label for="Cpass" class="form-label">Confirm password</label>
+          <input type="password" class="form-control" name="Confirmpass" id="Cpass" placeholder="" required>
+        </div>
+        <button type="submit" onclick="submitForm(event)">Create Account</button>
+     </fieldset>
+   </form>
+  </main>
+  <footer>
+    <!-- The footer goes here -->
+    <span>©2023 Flexiwork Studios</span>
+    <p>By creating an account with us and investing on this site, You have automatically accepted the risk invloved. Kindly note, our expert financial advisors will be sure to guide you against massive losses</p>
+  </footer>
+
+  <!-- Linking the Javascript File -->
+  <script src="script.js"></script>
+</body>
+</html>
