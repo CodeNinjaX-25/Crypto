@@ -233,7 +233,7 @@ footer{
     }
     body p:first-child span{
         color: white;
-        font-size: 40px;
+        font-size: 30px;
         font-family: cursive;
     }
     body{
@@ -241,6 +241,9 @@ footer{
         height: 100vh;
         align-items: center;
         justify-content: center;
+    }
+    footer{
+        display: none;
     }
 }
 @media (min-width: 1144px) {
